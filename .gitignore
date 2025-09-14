@@ -1,0 +1,15 @@
+# Ignore simulation tool build outputs
+work/
+*.qpg
+*.log
+*.jou
+*.wdb
+*.pb
+*.dmp
+*.vcd
+
+# Ignore temporary files
+*.swp
+*.tmp
+*.bak
+
