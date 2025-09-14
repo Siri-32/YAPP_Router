@@ -1,0 +1,230 @@
+# vsim -c work.top_no_dut "+UVM_TESTNAME=test1" "+UVM_VERBOSITY=UVM_HIGH" -do "run -all; quit" 
+# Start time: 21:24:41 on Sep 04,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.top_no_dut_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top_no_dut(fast)
+# Loading work.yapp_if(fast)
+# Loading /home/siriharshitha/Documents/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test test1...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------
+# Name                         Type                    Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top                 test1                   -     @473 
+#   tb                         router_tb               -     @484 
+#     env                      yapp_env                -     @493 
+#       agent                  yapp_tx_agent           -     @500 
+#         driver               yapp_tx_driver          -     @515 
+#           rsp_port           uvm_analysis_port       -     @530 
+#           seq_item_port      uvm_seq_item_pull_port  -     @522 
+#         monitor              yapp_tx_monitor         -     @508 
+#         sequencer            yapp_tx_sequencer       -     @538 
+#           rsp_export         uvm_analysis_export     -     @545 
+#           seq_item_export    uvm_seq_item_pull_imp   -     @639 
+#           arbitration_queue  array                   0     -    
+#           lock_queue         array                   0     -    
+#           num_last_reqs      integral                32    'd1  
+#           num_last_rsps      integral                32    'd1  
+# ----------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(339) @ 0: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO ../sv/yapp_tx_monitor.sv(36) @ 0: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] start_of_simulation_phase called
+# UVM_INFO ../sv/yapp_tx_sequencer.sv(18) @ 0: uvm_test_top.tb.env.agent.sequencer [yapp_tx_sequencer] start_of_simulation_phase called
+# UVM_INFO ../sv/yapp_tx_agent.sv(46) @ 0: uvm_test_top.tb.env.agent [yapp_tx_agent] start_of_simulation_phase called
+# UVM_INFO ../sv/yapp_env.sv(49) @ 0: uvm_test_top.tb.env [yapp_env] start_of_simulation_phase called
+# UVM_INFO ../sv/yapp_tx_monitor.sv(43) @ 0: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Inside the run_phase
+# UVM_INFO ../sv/yapp_tx_seqs.sv(52) @ 0: uvm_test_top.tb.env.agent.sequencer@@yapp_5_packets [yapp_5_packets] Starting sequence yapp_5_packets
+# UVM_INFO ../sv/yapp_tx_driver.sv(50) @ 20000: uvm_test_top.tb.env.agent.driver [yapp_tx_driver] Reset dropped
+# UVM_INFO ../sv/yapp_tx_monitor.sv(50) @ 20000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Detected Reset Done
+# UVM_INFO ../sv/yapp_tx_monitor.sv(66) @ 85000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../sv/yapp_tx_monitor.sv(90) @ 235000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# -------------------------------------------------
+# Name              Type          Size  Value      
+# -------------------------------------------------
+# packet_collected  yapp_packet   -     @661       
+#   length          integral      6     'he        
+#   addr            integral      2     'h2        
+#   parity          integral      8     'h4        
+#   payload         da(integral)  14    -          
+#     [0]           integral      8     'h7        
+#     [1]           integral      8     'h65       
+#     [2]           integral      8     'h60       
+#     [3]           integral      8     'h2e       
+#     [4]           integral      8     'h95       
+#     ...           ...           ...   ...        
+#     [9]           integral      8     'hf5       
+#     [10]          integral      8     'h22       
+#     [11]          integral      8     'h5f       
+#     [12]          integral      8     'h6d       
+#     [13]          integral      8     'h31       
+#   parity_type     parity_t      32    GOOD_PARITY
+#   packet_delay    integral      32    'h0        
+#   begin_time      time          64    85000      
+#   end_time        time          64    235000     
+# -------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_monitor.sv(66) @ 385000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../sv/yapp_tx_monitor.sv(90) @ 1015000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# -------------------------------------------------
+# Name              Type          Size  Value      
+# -------------------------------------------------
+# packet_collected  yapp_packet   -     @661       
+#   length          integral      6     'h3e       
+#   addr            integral      2     'h2        
+#   parity          integral      8     'h1e       
+#   payload         da(integral)  62    -          
+#     [0]           integral      8     'hc        
+#     [1]           integral      8     'hd6       
+#     [2]           integral      8     'h37       
+#     [3]           integral      8     'hbe       
+#     [4]           integral      8     'h4d       
+#     ...           ...           ...   ...        
+#     [57]          integral      8     'h51       
+#     [58]          integral      8     'hfe       
+#     [59]          integral      8     'he4       
+#     [60]          integral      8     'h87       
+#     [61]          integral      8     'hd1       
+#   parity_type     parity_t      32    GOOD_PARITY
+#   packet_delay    integral      32    'h0        
+#   begin_time      time          64    385000     
+#   end_time        time          64    1015000    
+# -------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_monitor.sv(66) @ 1065000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../sv/yapp_tx_monitor.sv(90) @ 1475000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# -------------------------------------------------
+# Name              Type          Size  Value      
+# -------------------------------------------------
+# packet_collected  yapp_packet   -     @661       
+#   length          integral      6     'h28       
+#   addr            integral      2     'h0        
+#   parity          integral      8     'h1e       
+#   payload         da(integral)  40    -          
+#     [0]           integral      8     'hf5       
+#     [1]           integral      8     'hf5       
+#     [2]           integral      8     'h15       
+#     [3]           integral      8     'h3c       
+#     [4]           integral      8     'h1        
+#     ...           ...           ...   ...        
+#     [35]          integral      8     'h30       
+#     [36]          integral      8     'hf        
+#     [37]          integral      8     'h60       
+#     [38]          integral      8     'h56       
+#     [39]          integral      8     'h4a       
+#   parity_type     parity_t      32    GOOD_PARITY
+#   packet_delay    integral      32    'h0        
+#   begin_time      time          64    1065000    
+#   end_time        time          64    1475000    
+# -------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_monitor.sv(66) @ 1625000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../sv/yapp_tx_monitor.sv(90) @ 2175000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# -------------------------------------------------
+# Name              Type          Size  Value      
+# -------------------------------------------------
+# packet_collected  yapp_packet   -     @661       
+#   length          integral      6     'h36       
+#   addr            integral      2     'h0        
+#   parity          integral      8     'h4d       
+#   payload         da(integral)  54    -          
+#     [0]           integral      8     'h8c       
+#     [1]           integral      8     'hf6       
+#     [2]           integral      8     'h3c       
+#     [3]           integral      8     'h60       
+#     [4]           integral      8     'h12       
+#     ...           ...           ...   ...        
+#     [49]          integral      8     'he6       
+#     [50]          integral      8     'hcc       
+#     [51]          integral      8     'h5a       
+#     [52]          integral      8     'h4b       
+#     [53]          integral      8     'hd1       
+#   parity_type     parity_t      32    GOOD_PARITY
+#   packet_delay    integral      32    'h0        
+#   begin_time      time          64    1625000    
+#   end_time        time          64    2175000    
+# -------------------------------------------------
+# 
+# UVM_INFO ../sv/yapp_tx_monitor.sv(66) @ 2355000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../sv/yapp_tx_monitor.sv(90) @ 2385000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# -------------------------------------------------
+# Name              Type          Size  Value      
+# -------------------------------------------------
+# packet_collected  yapp_packet   -     @661       
+#   length          integral      6     'h2        
+#   addr            integral      2     'h1        
+#   parity          integral      8     'haf       
+#   payload         da(integral)  2     -          
+#     [0]           integral      8     'h8b       
+#     [1]           integral      8     'h2d       
+#   parity_type     parity_t      32    GOOD_PARITY
+#   packet_delay    integral      32    'h0        
+#   begin_time      time          64    2355000    
+#   end_time        time          64    2385000    
+# -------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 2390200: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../sv/yapp_tx_driver.sv(121) @ 2390200: uvm_test_top.tb.env.agent.driver [yapp_tx_driver] Report: YAPP TX driver sent 5 packets
+# UVM_INFO ../sv/yapp_tx_monitor.sv(99) @ 2390200: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Report: YAPP Monitor Collected 5 Packets
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   26
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     3
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [yapp_5_packets]     1
+# [yapp_env]     1
+# [yapp_tx_agent]     1
+# [yapp_tx_driver]     2
+# [yapp_tx_monitor]    14
+# [yapp_tx_sequencer]     1
+# ** Note: $finish    : /home/siriharshitha/Documents/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 2390200 ps  Iteration: 53  Instance: /top_no_dut
+# End time: 21:24:44 on Sep 04,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

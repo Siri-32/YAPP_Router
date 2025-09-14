@@ -1,0 +1,2 @@
+var g_data = {"data":[{"n":"work.channel_if","id":8,"zf":1,"tc":82.14,"t":82.14},{"n":"work.hbus_if","id":1,"zf":1,"tc":62.58,"s":100.00,"b":0.00,"fe":50.00,"t":62.90,"a":100.00},{"n":"work.hbus_pkg","id":3,"zf":1,"tc":26.72,"s":22.17,"b":11.61,"fc":0.87,"g":72.22},{"n":"work.top_dut","id":6,"zf":1,"tc":88.09,"s":92.85,"t":83.33},{"n":"work.top_dut_sv_unit","id":4,"zf":1,"tc":52.36,"s":44.71,"b":23.70,"fc":10.91,"g":82.50,"a":100.00},{"n":"work.yapp_if","id":7,"zf":1,"tc":28.04,"t":28.04},{"n":"work.yapp_router","id":9,"zf":1,"tc":100.00,"t":100.00}]};
+processDuData(g_data);

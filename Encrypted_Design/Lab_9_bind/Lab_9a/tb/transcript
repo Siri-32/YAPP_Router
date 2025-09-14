@@ -1,0 +1,506 @@
+# vsim -c work.top_dut "+UVM_TESTNAME=simple_test" "+UVM_VERBOSITY=UVM_HIGH" -do "run -all; quit" 
+# Start time: 13:07:41 on Aug 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.hbus_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.hbus_pkg(fast)
+# Loading work.top_dut_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top_dut(fast)
+# Loading work.yapp_if(fast)
+# Loading work.channel_if(fast)
+# Loading /home/siriharshitha/Documents/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test simple_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# -------------------------------------------------------------------------
+# Name                           Type                      Size  Value     
+# -------------------------------------------------------------------------
+# uvm_test_top                   simple_test               -     @483      
+#   tb                           router_tb                 -     @490      
+#     ch_env0                    channel_env               -     @513      
+#       monitor                  channel_monitor           -     @707      
+#         item_collected_port    uvm_analysis_port         -     @715      
+#         resp_collected_port    uvm_analysis_port         -     @723      
+#         instance_id            string                    9     Channel_0 
+#         checks_enable          integral                  1     'h1       
+#         coverage_enable        integral                  1     'h1       
+#       rx_agent                 channel_rx_agent          -     @700      
+#         driver                 channel_rx_driver         -     @845      
+#           rsp_port             uvm_analysis_port         -     @860      
+#           seq_item_port        uvm_seq_item_pull_port    -     @852      
+#         sequencer              channel_rx_sequencer      -     @736      
+#           rsp_export           uvm_analysis_export       -     @743      
+#           seq_item_export      uvm_seq_item_pull_imp     -     @837      
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#         monitor                channel_monitor           -     @707      
+#         is_active              uvm_active_passive_enum   1     UVM_ACTIVE
+#       has_tx                   integral                  1     'h0       
+#       has_rx                   integral                  1     'h1       
+#       checks_enable            integral                  1     'h1       
+#       coverage_enable          integral                  1     'h1       
+#     ch_env1                    channel_env               -     @520      
+#       monitor                  channel_monitor           -     @880      
+#         item_collected_port    uvm_analysis_port         -     @888      
+#         resp_collected_port    uvm_analysis_port         -     @896      
+#         instance_id            string                    9     Channel_1 
+#         checks_enable          integral                  1     'h1       
+#         coverage_enable        integral                  1     'h1       
+#       rx_agent                 channel_rx_agent          -     @873      
+#         driver                 channel_rx_driver         -     @1018     
+#           rsp_port             uvm_analysis_port         -     @1033     
+#           seq_item_port        uvm_seq_item_pull_port    -     @1025     
+#         sequencer              channel_rx_sequencer      -     @909      
+#           rsp_export           uvm_analysis_export       -     @916      
+#           seq_item_export      uvm_seq_item_pull_imp     -     @1010     
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#         monitor                channel_monitor           -     @880      
+#         is_active              uvm_active_passive_enum   1     UVM_ACTIVE
+#       has_tx                   integral                  1     'h0       
+#       has_rx                   integral                  1     'h1       
+#       checks_enable            integral                  1     'h1       
+#       coverage_enable          integral                  1     'h1       
+#     ch_env2                    channel_env               -     @527      
+#       monitor                  channel_monitor           -     @1053     
+#         item_collected_port    uvm_analysis_port         -     @1061     
+#         resp_collected_port    uvm_analysis_port         -     @1069     
+#         instance_id            string                    9     Channel_2 
+#         checks_enable          integral                  1     'h1       
+#         coverage_enable        integral                  1     'h1       
+#       rx_agent                 channel_rx_agent          -     @1046     
+#         driver                 channel_rx_driver         -     @1191     
+#           rsp_port             uvm_analysis_port         -     @1206     
+#           seq_item_port        uvm_seq_item_pull_port    -     @1198     
+#         sequencer              channel_rx_sequencer      -     @1082     
+#           rsp_export           uvm_analysis_export       -     @1089     
+#           seq_item_export      uvm_seq_item_pull_imp     -     @1183     
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#         monitor                channel_monitor           -     @1053     
+#         is_active              uvm_active_passive_enum   1     UVM_ACTIVE
+#       has_tx                   integral                  1     'h0       
+#       has_rx                   integral                  1     'h1       
+#       checks_enable            integral                  1     'h1       
+#       coverage_enable          integral                  1     'h1       
+#     env                        yapp_env                  -     @506      
+#       agent                    yapp_tx_agent             -     @1216     
+#         driver                 yapp_tx_driver            -     @1239     
+#           rsp_port             uvm_analysis_port         -     @1254     
+#           seq_item_port        uvm_seq_item_pull_port    -     @1246     
+#         monitor                yapp_tx_monitor           -     @1224     
+#           item_collected_port  uvm_analysis_port         -     @1231     
+#         sequencer              yapp_tx_sequencer         -     @1262     
+#           rsp_export           uvm_analysis_export       -     @1269     
+#           seq_item_export      uvm_seq_item_pull_imp     -     @1363     
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#     hbus                       hbus_env                  -     @534      
+#       masters[0]               hbus_master_agent         -     @1397     
+#         driver                 hbus_master_driver        -     @1517     
+#           rsp_port             uvm_analysis_port         -     @1532     
+#           seq_item_port        uvm_seq_item_pull_port    -     @1524     
+#           random_delay         integral                  1     'h0       
+#           master_id            integral                  32    'h0       
+#         sequencer              hbus_master_sequencer     -     @1408     
+#           rsp_export           uvm_analysis_export       -     @1415     
+#           seq_item_export      uvm_seq_item_pull_imp     -     @1509     
+#           arbitration_queue    array                     0     -         
+#           lock_queue           array                     0     -         
+#           num_last_reqs        integral                  32    'd1       
+#           num_last_rsps        integral                  32    'd1       
+#         monitor                hbus_monitor              -     @1381     
+#         is_active              uvm_active_passive_enum   1     UVM_ACTIVE
+#         master_id              integral                  32    'h0       
+#       monitor                  hbus_monitor              -     @1381     
+#         item_collected_port    uvm_analysis_port         -     @1388     
+#         checks_enable          integral                  1     'h1       
+#         coverage_enable        integral                  1     'h1       
+#       num_masters              integral                  32    'h1       
+#       num_slaves               integral                  32    'h0       
+#       checks_enable            integral                  1     'h1       
+#       coverage_enable          integral                  1     'h1       
+#     sb                         router_scoreboard         -     @658      
+#       sb_chan0_in              uvm_analysis_imp_chan0    -     @673      
+#       sb_chan1_in              uvm_analysis_imp_chan1    -     @681      
+#       sb_chan2_in              uvm_analysis_imp_chan2    -     @689      
+#       sb_yapp_in               uvm_analysis_imp_yapp     -     @665      
+#     vseqr                      router_virtual_sequencer  -     @549      
+#       rsp_export               uvm_analysis_export       -     @556      
+#       seq_item_export          uvm_seq_item_pull_imp     -     @650      
+#       arbitration_queue        array                     0     -         
+#       lock_queue               array                     0     -         
+#       num_last_reqs            integral                  32    'd1       
+#       num_last_rsps            integral                  32    'd1       
+# -------------------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(339) @ 0: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(39) @ 0: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] start_of_simulation_phase called
+# UVM_INFO ../../yapp/sv/yapp_tx_sequencer.sv(18) @ 0: uvm_test_top.tb.env.agent.sequencer [yapp_tx_sequencer] start_of_simulation_phase called
+# UVM_INFO ../../yapp/sv/yapp_tx_agent.sv(46) @ 0: uvm_test_top.tb.env.agent [yapp_tx_agent] start_of_simulation_phase called
+# UVM_INFO ../../yapp/sv/yapp_env.sv(49) @ 0: uvm_test_top.tb.env [yapp_env] start_of_simulation_phase called
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(44) @ 0: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Inside the run_phase
+# UVM_INFO ../../channel/sv/channel_monitor.sv(131) @ 0: uvm_test_top.tb.ch_env2.monitor [channel_monitor] Inside the run() phase
+# UVM_INFO ../../channel/sv/channel_monitor.sv(131) @ 0: uvm_test_top.tb.ch_env1.monitor [channel_monitor] Inside the run() phase
+# UVM_INFO ../../channel/sv/channel_monitor.sv(131) @ 0: uvm_test_top.tb.ch_env0.monitor [channel_monitor] Inside the run() phase
+# UVM_INFO ../../yapp/sv/yapp_tx_seqs.sv(111) @ 0: uvm_test_top.tb.env.agent.sequencer@@yapp_012_seq [yapp_012_seq] Starting sequence yapp_012_seq
+# UVM_INFO ../../channel/sv/channel_rx_seqs.sv(37) @ 0: uvm_test_top.tb.ch_env2.rx_agent.sequencer@@channel_rx_resp_seq [channel_rx_resp_seq] Executing channel_rx_resp_seq (forever)
+# UVM_INFO ../../channel/sv/channel_rx_seqs.sv(37) @ 0: uvm_test_top.tb.ch_env1.rx_agent.sequencer@@channel_rx_resp_seq [channel_rx_resp_seq] Executing channel_rx_resp_seq (forever)
+# UVM_INFO ../../channel/sv/channel_rx_seqs.sv(37) @ 0: uvm_test_top.tb.ch_env0.rx_agent.sequencer@@channel_rx_resp_seq [channel_rx_resp_seq] Executing channel_rx_resp_seq (forever)
+# UVM_INFO ../../yapp/sv/yapp_tx_driver.sv(50) @ 20000: uvm_test_top.tb.env.agent.driver [yapp_tx_driver] Reset dropped
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(50) @ 20000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Detected Reset Done
+# UVM_INFO ../../hbus/sv/hbus_pkg.svp(255) @ 20000: uvm_test_top.tb.hbus.masters[0].driver [hbus_master_driver] Reset Dropped
+# UVM_INFO ../../channel/sv/channel_monitor.sv(139) @ 20000: uvm_test_top.tb.ch_env0.monitor [channel_monitor] Detected Reset Done
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(71) @ 20000: uvm_test_top.tb.ch_env0.rx_agent.driver [channel_rx_driver] Reset Dropped
+# UVM_INFO ../../channel/sv/channel_monitor.sv(139) @ 20000: uvm_test_top.tb.ch_env1.monitor [channel_monitor] Detected Reset Done
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(71) @ 20000: uvm_test_top.tb.ch_env1.rx_agent.driver [channel_rx_driver] Reset Dropped
+# UVM_INFO ../../channel/sv/channel_monitor.sv(139) @ 20000: uvm_test_top.tb.ch_env2.monitor [channel_monitor] Detected Reset Done
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(71) @ 20000: uvm_test_top.tb.ch_env2.rx_agent.driver [channel_rx_driver] Reset Dropped
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(95) @ 45000: uvm_test_top.tb.ch_env0.rx_agent.driver [channel_rx_driver] Channel_0 RX Driving Response :
+# -----------------------------------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                                                         
+# -----------------------------------------------------------------------------------------------------------------
+# req                            channel_resp  -     @1628                                                         
+#   resp_delay                   integral      32    'd6                                                           
+#   begin_time                   time          64    45000                                                         
+#   depth                        int           32    'd2                                                           
+#   parent sequence (name)       string        19    channel_rx_resp_seq                                           
+#   parent sequence (full name)  string        62    uvm_test_top.tb.ch_env0.rx_agent.sequencer.channel_rx_resp_seq
+#   sequencer                    string        42    uvm_test_top.tb.ch_env0.rx_agent.sequencer                    
+# -----------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(67) @ 55000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../../channel/sv/channel_monitor.sv(162) @ 125000: uvm_test_top.tb.ch_env0.monitor [channel_monitor] Collecting a packet
+# UVM_INFO ../../channel/sv/channel_monitor.sv(180) @ 135000: uvm_test_top.tb.ch_env0.monitor [channel_monitor] Channel_0 Packet collected :
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1608      
+#   length          integral           6     'h0        
+#   addr            integral           2     'h0        
+#   parity          integral           8     'h0        
+#   payload         da(integral)       0     -          
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    115000     
+#   end_time        time               64    135000     
+# ------------------------------------------------------
+# 
+# UVM_WARNING ../sv/router_scoreboard.sv(66) @ 135000: uvm_test_top.tb.sb [router_scoreboard] Scoreboard Error [EMPTY]: Received Unexpected Channel_0 Packet!
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1608      
+#   length          integral           6     'h0        
+#   addr            integral           2     'h0        
+#   parity          integral           8     'h0        
+#   payload         da(integral)       0     -          
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    115000     
+#   end_time        time               64    135000     
+# ------------------------------------------------------
+# 
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(89) @ 205000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1567      
+#   length          integral           6     'he        
+#   addr            integral           2     'h0        
+#   parity          integral           8     'h4e       
+#   payload         da(integral)       14    -          
+#     [0]           integral           8     'h7b       
+#     [1]           integral           8     'ha        
+#     [2]           integral           8     'h4a       
+#     [3]           integral           8     'hbf       
+#     [4]           integral           8     'h3        
+#     ...           ...                ...   ...        
+#     [9]           integral           8     'hd2       
+#     [10]          integral           8     'h56       
+#     [11]          integral           8     'h95       
+#     [12]          integral           8     'hf3       
+#     [13]          integral           8     'h2e       
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    55000      
+#   end_time        time               64    205000     
+# ------------------------------------------------------
+# 
+# UVM_INFO ../sv/router_scoreboard.sv(43) @ 205000: uvm_test_top.tb.sb [router_scoreboard] Added packet to Scoreboard Queue 0
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(67) @ 305000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../../channel/sv/channel_monitor.sv(199) @ 305000: uvm_test_top.tb.ch_env0.monitor [channel_monitor] Channel_0 Response Collected :
+# ----------------------------------------
+# Name          Type          Size  Value 
+# ----------------------------------------
+# response      channel_resp  -     @1612 
+#   resp_delay  integral      32    'd6   
+#   begin_time  time          64    45000 
+#   end_time    time          64    305000
+# ----------------------------------------
+# 
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(95) @ 325000: uvm_test_top.tb.ch_env1.rx_agent.driver [channel_rx_driver] Channel_1 RX Driving Response :
+# -----------------------------------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                                                         
+# -----------------------------------------------------------------------------------------------------------------
+# req                            channel_resp  -     @1624                                                         
+#   resp_delay                   integral      32    'd0                                                           
+#   begin_time                   time          64    325000                                                        
+#   depth                        int           32    'd2                                                           
+#   parent sequence (name)       string        19    channel_rx_resp_seq                                           
+#   parent sequence (full name)  string        62    uvm_test_top.tb.ch_env1.rx_agent.sequencer.channel_rx_resp_seq
+#   sequencer                    string        42    uvm_test_top.tb.ch_env1.rx_agent.sequencer                    
+# -----------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(89) @ 335000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1567      
+#   length          integral           6     'h2        
+#   addr            integral           2     'h1        
+#   parity          integral           8     'h8e       
+#   payload         da(integral)       2     -          
+#     [0]           integral           8     'hef       
+#     [1]           integral           8     'h68       
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    305000     
+#   end_time        time               64    335000     
+# ------------------------------------------------------
+# 
+# UVM_INFO ../sv/router_scoreboard.sv(47) @ 335000: uvm_test_top.tb.sb [router_scoreboard] Added packet to Scoreboard Queue 1
+# UVM_INFO ../../channel/sv/channel_monitor.sv(162) @ 345000: uvm_test_top.tb.ch_env1.monitor [channel_monitor] Collecting a packet
+# UVM_INFO ../../channel/sv/channel_monitor.sv(199) @ 375000: uvm_test_top.tb.ch_env1.monitor [channel_monitor] Channel_1 Response Collected :
+# ----------------------------------------
+# Name          Type          Size  Value 
+# ----------------------------------------
+# response      channel_resp  -     @1597 
+#   resp_delay  integral      32    'd0   
+#   begin_time  time          64    325000
+#   end_time    time          64    375000
+# ----------------------------------------
+# 
+# UVM_INFO ../../channel/sv/channel_monitor.sv(180) @ 375000: uvm_test_top.tb.ch_env1.monitor [channel_monitor] Channel_1 Packet collected :
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1593      
+#   length          integral           6     'h2        
+#   addr            integral           2     'h1        
+#   parity          integral           8     'h8e       
+#   payload         da(integral)       2     -          
+#     [0]           integral           8     'hef       
+#     [1]           integral           8     'h68       
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    335000     
+#   end_time        time               64    375000     
+# ------------------------------------------------------
+# 
+# UVM_INFO ../sv/router_scoreboard.sv(101) @ 375000: uvm_test_top.tb.sb [router_scoreboard] Scoreboard Compare Match: Channel_1 Packet
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1593      
+#   length          integral           6     'h2        
+#   addr            integral           2     'h1        
+#   parity          integral           8     'h8e       
+#   payload         da(integral)       2     -          
+#     [0]           integral           8     'hef       
+#     [1]           integral           8     'h68       
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    335000     
+#   end_time        time               64    375000     
+# ------------------------------------------------------
+# 
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(67) @ 415000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Collecting a packet
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(95) @ 435000: uvm_test_top.tb.ch_env2.rx_agent.driver [channel_rx_driver] Channel_2 RX Driving Response :
+# -----------------------------------------------------------------------------------------------------------------
+# Name                           Type          Size  Value                                                         
+# -----------------------------------------------------------------------------------------------------------------
+# req                            channel_resp  -     @1620                                                         
+#   resp_delay                   integral      32    'd6                                                           
+#   begin_time                   time          64    435000                                                        
+#   depth                        int           32    'd2                                                           
+#   parent sequence (name)       string        19    channel_rx_resp_seq                                           
+#   parent sequence (full name)  string        62    uvm_test_top.tb.ch_env2.rx_agent.sequencer.channel_rx_resp_seq
+#   sequencer                    string        42    uvm_test_top.tb.ch_env2.rx_agent.sequencer                    
+# -----------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(89) @ 505000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Packet Collected :
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1567      
+#   length          integral           6     'h8        
+#   addr            integral           2     'h2        
+#   parity          integral           8     'h1c       
+#   payload         da(integral)       8     -          
+#     [0]           integral           8     'h48       
+#     [1]           integral           8     'ha8       
+#     [2]           integral           8     'h8b       
+#     [3]           integral           8     'h99       
+#     [4]           integral           8     'hc5       
+#     [5]           integral           8     'hfc       
+#     [6]           integral           8     'hee       
+#     [7]           integral           8     'h1b       
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    415000     
+#   end_time        time               64    505000     
+# ------------------------------------------------------
+# 
+# UVM_INFO ../sv/router_scoreboard.sv(51) @ 505000: uvm_test_top.tb.sb [router_scoreboard] Added packet to Scoreboard Queue 2
+# UVM_INFO ../../channel/sv/channel_monitor.sv(162) @ 515000: uvm_test_top.tb.ch_env2.monitor [channel_monitor] Collecting a packet
+# UVM_INFO ../../channel/sv/channel_monitor.sv(199) @ 605000: uvm_test_top.tb.ch_env2.monitor [channel_monitor] Channel_2 Response Collected :
+# ----------------------------------------
+# Name          Type          Size  Value 
+# ----------------------------------------
+# response      channel_resp  -     @1582 
+#   resp_delay  integral      32    'd6   
+#   begin_time  time          64    435000
+#   end_time    time          64    605000
+# ----------------------------------------
+# 
+# UVM_INFO ../../channel/sv/channel_monitor.sv(180) @ 605000: uvm_test_top.tb.ch_env2.monitor [channel_monitor] Channel_2 Packet collected :
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1578      
+#   length          integral           6     'h8        
+#   addr            integral           2     'h2        
+#   parity          integral           8     'h1c       
+#   payload         da(integral)       8     -          
+#     [0]           integral           8     'h48       
+#     [1]           integral           8     'ha8       
+#     [2]           integral           8     'h8b       
+#     [3]           integral           8     'h99       
+#     [4]           integral           8     'hc5       
+#     [5]           integral           8     'hfc       
+#     [6]           integral           8     'hee       
+#     [7]           integral           8     'h1b       
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    505000     
+#   end_time        time               64    605000     
+# ------------------------------------------------------
+# 
+# UVM_INFO ../sv/router_scoreboard.sv(128) @ 605000: uvm_test_top.tb.sb [router_scoreboard] Scoreboard Compare Match: Channel_2 Packet
+# ------------------------------------------------------
+# Name              Type               Size  Value      
+# ------------------------------------------------------
+# packet_collected  short_yapp_packet  -     @1578      
+#   length          integral           6     'h8        
+#   addr            integral           2     'h2        
+#   parity          integral           8     'h1c       
+#   payload         da(integral)       8     -          
+#     [0]           integral           8     'h48       
+#     [1]           integral           8     'ha8       
+#     [2]           integral           8     'h8b       
+#     [3]           integral           8     'h99       
+#     [4]           integral           8     'hc5       
+#     [5]           integral           8     'hfc       
+#     [6]           integral           8     'hee       
+#     [7]           integral           8     'h1b       
+#   parity_type     parity_t           32    GOOD_PARITY
+#   packet_delay    integral           32    'h0        
+#   begin_time      time               64    505000     
+#   end_time        time               64    605000     
+# ------------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 100000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../../channel/sv/channel_monitor.sv(215) @ 100000000: uvm_test_top.tb.ch_env0.monitor [channel_monitor] Report: Channel_0 Monitor Collected 1 Packets and 1 Responses
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(122) @ 100000000: uvm_test_top.tb.ch_env0.rx_agent.driver [channel_rx_driver] Report: Channel_0 RX Driver Sent 1 Responses
+# UVM_INFO ../../channel/sv/channel_monitor.sv(215) @ 100000000: uvm_test_top.tb.ch_env1.monitor [channel_monitor] Report: Channel_1 Monitor Collected 1 Packets and 1 Responses
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(122) @ 100000000: uvm_test_top.tb.ch_env1.rx_agent.driver [channel_rx_driver] Report: Channel_1 RX Driver Sent 1 Responses
+# UVM_INFO ../../channel/sv/channel_monitor.sv(215) @ 100000000: uvm_test_top.tb.ch_env2.monitor [channel_monitor] Report: Channel_2 Monitor Collected 1 Packets and 1 Responses
+# UVM_INFO ../../channel/sv/channel_rx_driver.sv(122) @ 100000000: uvm_test_top.tb.ch_env2.rx_agent.driver [channel_rx_driver] Report: Channel_2 RX Driver Sent 1 Responses
+# UVM_INFO ../../yapp/sv/yapp_tx_driver.sv(121) @ 100000000: uvm_test_top.tb.env.agent.driver [yapp_tx_driver] Report: YAPP TX driver sent 3 packets
+# UVM_INFO ../../yapp/sv/yapp_tx_monitor.sv(99) @ 100000000: uvm_test_top.tb.env.agent.monitor [yapp_tx_monitor] Report: YAPP Monitor Collected 3 Packets
+# UVM_INFO ../../hbus/sv/hbus_pkg.svp(190) @ 100000000: uvm_test_top.tb.hbus.monitor [hbus_monitor] Report: HBUS Monitor Collected 0 WRITE and 0 READ Transactions
+# UVM_INFO ../sv/router_scoreboard.sv(144) @ 100000000: uvm_test_top.tb.sb [router_scoreboard] Report:
+# 
+#    Scoreboard: Packet Statistics 
+#      Packets In:   3     Packets Dropped: 0
+#      Channel 0 Total: 1  Pass: 0  Miscompare: 0  Dropped: 1
+#      Channel 1 Total: 1  Pass: 1  Miscompare: 0  Dropped: 0
+#      Channel 2 Total: 1  Pass: 1  Miscompare: 0  Dropped: 0
+# 
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   60
+# UVM_WARNING :    1
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     3
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [channel_monitor]    18
+# [channel_rx_driver]     9
+# [channel_rx_resp_seq]     3
+# [hbus_master_driver]     1
+# [hbus_monitor]     1
+# [router_scoreboard]     7
+# [yapp_012_seq]     1
+# [yapp_env]     1
+# [yapp_tx_agent]     1
+# [yapp_tx_driver]     2
+# [yapp_tx_monitor]    10
+# [yapp_tx_sequencer]     1
+# ** Note: $finish    : /home/siriharshitha/Documents/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 100 us  Iteration: 54  Instance: /top_dut
+# End time: 13:07:46 on Aug 26,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0

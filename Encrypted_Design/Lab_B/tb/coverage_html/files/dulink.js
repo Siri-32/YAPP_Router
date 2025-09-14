@@ -1,0 +1,2 @@
+var g_data = {"8":["work.channel_if",82.14,1],"1":["work.hbus_if",62.58,1],"3":["work.hbus_pkg",26.72,1],"6":["work.top_dut",88.09,1],"4":["work.top_dut_sv_unit",52.36,1],"7":["work.yapp_if",28.04,1],"9":["work.yapp_router",100.00,1]};
+processDuLinks(g_data);
