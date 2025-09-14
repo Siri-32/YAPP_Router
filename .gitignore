@@ -1,15 +1,15 @@
-# Ignore simulation tool build outputs
+# Simulation / tool build directories
 work/
 *.qpg
-*.log
 *.jou
+*.log
 *.wdb
 *.pb
 *.dmp
 *.vcd
 
-# Ignore temporary files
+# Temporary / editor files
 *.swp
 *.tmp
 *.bak
-
+.vscode/
